@@ -1,5 +1,5 @@
 # Feane
-It's my clone about Restaurant home page as first project.
+It's my clone about Restaurant home page as my first project.
 
 
 - 👋 Hi, I’m @Seif-Nageh
