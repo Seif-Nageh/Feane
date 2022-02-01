@@ -1,0 +1,380 @@
+/*
+Theme Name : Feane
+Theme Coder : Seif Nageh
+PSD Designer : 
+Started At : 21/11/2021
+Ended At : 29/11/2021
+Monitored by : Hessien Attia
+First Color : #03fcbe
+Second Color : #A32700
+*/
+
+
+/*     Start Background Image Slider & NavBar   */
+
+:root {
+    --main-color: #222831;
+    --second-color: #FFBE33;
+    --txt-color: #fff;
+    --txt-family: dancing;
+}
+
+.txt-family {
+    font-family: Var(--txt-family);
+}
+
+.txt-color {
+    color: var(--txt-color);
+}
+
+.btn {
+    background-color: var(--second-color);
+}
+
+.btn-color {
+    background-color: var(--second-color);
+}
+
+.back-color {
+    background-color: var(--main-color);
+}
+
+@font-face {
+    font-family: dancing;
+    src: url(../webfonts/DancingScript-Medium.ttf);
+}
+
+.main-btn {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    ;
+}
+
+.background-img {
+    background-image: url("../img/hero-bg.jpg");
+    background-size: cover;
+    height: 725px;
+}
+
+.nav-icon {
+    color: var(--txt-color);
+    margin: 10px;
+    cursor: pointer;
+}
+
+.nav-icon:hover {
+    color: var(--second-color);
+}
+
+.background-img .nav-txt {
+    font-size: large;
+    margin: 0px 10px;
+    color: var(--txt-color);
+}
+
+.collapse ul li a:hover {
+    color: var(--second-color) !important;
+}
+
+.navbar-dark .navbar-nav .active>.nav-link {
+    color: var(--second-color);
+}
+
+.item {
+    height: 400px;
+}
+
+.item p {
+    max-width: 600px;
+}
+
+.main-txt {
+    color: var(--txt-color);
+}
+
+.slider {
+    height: 550px;
+    align-items: end;
+    justify-content: left;
+}
+
+@media (max-width: 575.98px) {
+    .slider {
+        align-items: center;
+        text-align: center;
+    }
+}
+
+.slide ol {
+    justify-content: left;
+}
+
+@media (max-width: 575.98px) {
+    .slide ol {
+        justify-content: center;
+    }
+}
+
+.slider-btn {
+    width: 15px !important;
+    height: 15px !important;
+    border-radius: 50%;
+}
+
+.background-img .logo {
+    font-size: 34px !important;
+}
+
+.carousel-item h1 {
+    font-size: 60px;
+}
+
+
+/*     End Background Image Slider & NavBar   */
+
+
+/*     Start Offer Section   */
+
+.offr-sec {
+    margin: 15vh 0;
+    font-family: var(--txt-family);
+}
+
+.offr-sec h1 {
+    font-size: 40px;
+}
+
+.offr-cont img {
+    height: 100%;
+    border: 5px solid var(--second-color);
+    width: 100%;
+    transition: 0.5s all ease-in-out;
+}
+
+.offr-body img:hover {
+    transform: scale(1.1);
+}
+
+.off {
+    font-size: 20px;
+}
+
+.offr-sec .crd {
+    background-color: var(--main-color);
+    color: var(--txt-color);
+}
+
+@media (max-width: 770px) {
+    .offr-sec .crd {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .offr-cont .row {
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+    }
+}
+
+
+/*     End Offer Section   */
+
+
+/*     Start Category   */
+
+.category ul {
+    box-sizing: border-box;
+    overflow: hidden;
+    cursor: pointer;
+    color: var(--txt-color);
+}
+
+.category li {
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    margin: 0 15px;
+    color: var(--main-color);
+    padding: 10px 30px;
+}
+
+.category ul .active {
+    color: var(--txt-color);
+    background-color: var(--main-color) !important;
+    border-radius: 30px;
+}
+
+.category .row {
+    margin-bottom: 10px;
+    color: var(--txt-color);
+}
+
+.category .row .card {
+    background-color: var(--main-color);
+    width: 90%;
+}
+
+.category .row .card i {
+    background-color: var(--second-color);
+}
+
+.category .row img {
+    max-width: 100%;
+    max-height: 80%;
+    transition: all .2s;
+}
+
+.category .row .card .img-con {
+    border-radius: 0 0 0 50px;
+    background-color: #F1F2F3;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 215px;
+    padding: 25px;
+}
+
+
+/*     End Category   */
+
+
+/*     Start About   */
+
+.about {
+    margin: 70px 0;
+}
+
+@media (max-width: 575.98px) {
+    .about {
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+    }
+}
+
+.about .container {
+    padding: 40px 0;
+}
+
+@media (max-width: 575.98px) {
+    .about-img-par {
+        display: none !important;
+    }
+}
+
+.about .row img {
+    height: 100%;
+    margin: 20px;
+}
+
+.about .row .par-item {
+    margin: 135px 0;
+}
+
+
+/*     End About   */
+
+
+/*     Start forms   */
+
+.forms .frm .input-group {
+    margin: 25px 0;
+}
+
+.forms .frm .input-group input {
+    height: 50px;
+}
+
+.gps .overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+
+/*     End forms   */
+
+
+/*     Start Comments   */
+
+.comments .comment-slider .carousel-item .comment-txt {
+    border-radius: 5px;
+    padding: 15px 25px;
+}
+
+.comments .comment-slider .carousel-item img {
+    border: 5px solid var(--second-color);
+}
+
+.comments .comment-slider .carousel-item .comment-img::after {
+    content: "";
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid var(--second-color);
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    display: block;
+    position: absolute;
+    top: -8%;
+    left: 9.8%;
+}
+
+
+/*     End Comments   */
+
+
+/*     Start Footer   */
+
+footer {
+    padding: 50px 0;
+}
+
+footer .foot-txt {
+    margin-bottom: 5px;
+}
+
+.copy-write a {
+    text-decoration: none;
+    color: var(--txt-color);
+    margin-bottom: 8px;
+}
+
+.copy-write a:hover {
+    color: var(--second-color);
+}
+
+footer .icons {
+    margin-top: 15px;
+}
+
+footer .icons i {
+    margin: 0 3px;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 100%;
+    background-color: var(--txt-color);
+    cursor: pointer;
+}
+
+footer .icons i:hover {
+    color: var(--second-color);
+}
+
+.light-color {
+    color: rgb(214, 214, 214);
+}
+
+.w-85 {
+    width: 320px;
+}
+
+
+/*     End Footer   */
